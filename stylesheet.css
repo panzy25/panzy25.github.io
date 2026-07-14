@@ -187,3 +187,11 @@ span.highlight {
     color: #666;
     font-style: italic;
 }
+
+tr.info-extra {
+    display: none;
+}
+
+tr.info-extra.show {
+    display: table-row;
+}

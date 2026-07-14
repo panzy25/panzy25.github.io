@@ -25,7 +25,7 @@
                   I am a researcher working on foundation models and agents.
                   I am currently affiliated with <a href="https://z.ai/">z.ai</a> (Zhipu AI),
                   contributing to the <a href="https://github.com/zai-org">GLM</a> series of foundation models.
-                  I have been a member of <a href="https://github.com/zai-org">GLM</a> team since 2023, supervised by Prof. <a href="https://keg.cs.tsinghua.edu.cn/jietang/">Jie Tang</a> at Tsinghua University.
+                  I have been a member of <a href="https://github.com/zai-org">GLM</a> team since 2023, supervised by Prof. <a href="https://keg.cs.tsinghua.edu.cn/jietang/">Jie Tang</a> at <a href="https://www.tsinghua.edu.cn/">Tsinghua University</a>.
                   Before that, I received my Bachelor's and Master's degrees at <a href="https://www.sysu.edu.cn/">Sun Yat-sen University</a>, under the supervision of Prof. Daifeng Li.
                 </p>
                 <p>
@@ -203,7 +203,7 @@
 </tr>
 
 
-<tr>
+<tr class="info-extra">
   <td style="padding:16px;width:20%;vertical-align:middle">
     <div class="image-container">
       <img src="images/UDM.png" alt="UDM Sales Forecasting">
@@ -226,7 +226,7 @@
 </tr>
 
 
-<tr>
+<tr class="info-extra">
   <td style="padding:16px;width:20%;vertical-align:middle">
     <div class="image-container">
       <img src="images/MS-LSTM.png" alt="MS-LSTM Marketing Prediction">
@@ -247,6 +247,24 @@
     <p>A Multi-Sequence LSTM (MS-LSTM) model fusing heterogeneous data sources for marketing prediction of publicly-listed enterprises.</p>
   </td>
 </tr>
+
+<tr>
+  <td colspan="2" style="padding:0 16px;">
+    <button id="toggle-info-extra" class="toggle-button">Show 2 more papers</button>
+  </td>
+</tr>
+<script>
+  (function() {
+      const btn = document.getElementById('toggle-info-extra');
+      const rows = document.querySelectorAll('tr.info-extra');
+      let expanded = false;
+      btn.addEventListener('click', function() {
+          expanded = !expanded;
+          rows.forEach(r => r.classList.toggle('show', expanded));
+          btn.textContent = expanded ? 'Show fewer' : 'Show 2 more papers';
+      });
+  })();
+</script>
 
 
           </tbody></table>
